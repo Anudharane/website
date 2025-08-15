@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - New Theme</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        /* Header */
+        header {
+            background: #1f1f1f;
+            color: #00d4a4;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: #f1f1f1;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00d4a4;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #00d4a4, #006c5d);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .hero .tagline {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #00d4a4;
+            margin-bottom: 20px;
+        }
+
+        /* Cards */
+        .card, .skill-card, .project-card {
+            background: #1f1f1f;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover, .skill-card:hover, .project-card:hover {
+            background: #262626;
+        }
+
+        /* Skills Layout */
+        .skills-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            flex: 1;
+        }
+
+        /* Projects */
+        .project-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #00d4a4;
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #00d4a4;
+            color: #121212;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #00b38f;
+        }
+
+        /* Contact */
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background: #1f1f1f;
+            border: 1px solid #333;
+            color: #fff;
+            border-radius: 6px;
+        }
+
+        form button {
+            background: #00d4a4;
+            border: none;
+            padding: 10px 20px;
+            color: #121212;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #00b38f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f1f1f;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Anuja Dharane</h1>
+        <p class="tagline"> IT Engineer Student | Always Learning</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <p><strong>B.E. in Information Technology</strong></p>
+            <p>Finolex College of Engineering | Expected Graduation: 2027</p>
+            <p>Class 12 - Smt N.S Pantwalawalkar Junior College of Arts, Commerce and Science | 2023</p>
+            <p>Class 10 - Mahatma Gandhi Vidya Mandir Talebazar | 2021</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+        <h2>Skills & Tools</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <p>Python, Java, C, JavaScript, SQL, HTML, CSS</p>
+            </div>
+            <div class="skill-card">
+                <h3>Technologies</h3>
+                <p>Pandas, Numpy, Matplotlib</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Event Management System for College</h3>
+                <p>A web-based platform that allows students and faculty to create, manage, and register for college events. It streamlines event scheduling, participant registration, notifications, and report generation for better coordination and engagement.</p>
+            </div>
+            <div class="project-card">
+                <h3>Personal Finance Manager</h3>
+                <p>A software or web application designed to help users track income, expenses, savings, and investments. It provides budgeting tools, spending analysis, bill reminders, and financial reports, enabling better money management and informed financial decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+        <h2>Certificates & Resume</h2>
+        <div class="buttons">
+            <a href="https://drive.google.com/drive/u/0/folders/16VVJEXUZ4xt8TU-QuWY0nji1V0EPZs9r" target="_blank" class="btn">View Certificates</a>
+            <a href="https://drive.google.com/drive/u/0/folders/1q1oDe4QaU_SfW6n_zI14PEwiO2c3RKi-" target="_blank" class="btn">View Resume</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Anuja Dharane, an IT engineering student passionate about creating software and learning new technologies. This portfolio showcases my skills and projects. I continuously update it to reflect my learning journey.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div>
+                <p><strong>Email:</strong> anujadh2505@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9322383559</p>
+                <p><strong>Location:</strong> Remote</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Anuja Dharane. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
